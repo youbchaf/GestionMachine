@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ma.emsi.gestionmachine.ui.machine.ItemFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_item_list" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="ma.emsi.gestionmachine.ui.statisticsbymark.BlankFragment"
+        android:label="Machine par marque"
+        tools:layout="@layout/fragment_blank" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="ma.emsi.gestionmachine.ui.statistics.BlankFragment"
+        android:label="Machine par année"
+        tools:layout="@layout/fragment_blank2" />
+</navigation>
